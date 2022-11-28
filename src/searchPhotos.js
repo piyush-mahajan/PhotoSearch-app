@@ -1,9 +1,9 @@
 import "./Button.css";
 import React, { useState } from "react";
 import Unsplash, { toJson } from "unsplash-js";
-const API_KEY = process.env.REACT_APP_API_KEY;
+// const API_KEY = process.env.REACT_APP_API_KEY;
 const unsplash = new Unsplash({
-  accessKey: API_KEY,
+  accessKey: ngH_LHSp5AkF2yhuPOKvhbYrBL3RLXjZ_gsvNO7dQiA,
 });
 export default function SearchPhotos() {
   const [query, setQuery] = useState("");
