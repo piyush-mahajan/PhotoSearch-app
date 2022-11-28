@@ -1,25 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import "./Bag.css";
+import "./Button.css";
+
+import SearchPhotos from "./searchPhotos";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
+    <>
+      <div class="bg">
+        <div class="bg bg2">
+          <div class="bg bg3"></div>
+        </div>
+      </div>
+      <div class="bars" id="nav-action">
+        <a href="http://piyush-mahajan.netlify.app/">
+          <span class="bar"> </span>
         </a>
-      </header>
-    </div>
+      </div>
+      <div className="App">
+        <div className="container">
+          <div className="abonpho">
+            <h1 className="title">PiyuPix</h1>
+          </div>
+          <h6 className="description">
+            Beautiful, free images and photos that you can download and use for
+            any project. Better than any royalty free or stock photos. Made By
+            Piyush Mahajan
+          </h6>
+          <SearchPhotos />
+        </div>
+      </div>
+    </>
   );
 }
-
 export default App;
