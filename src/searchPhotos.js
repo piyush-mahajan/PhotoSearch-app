@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import Unsplash, { toJson } from "unsplash-js";
 // const API_KEY = process.env.REACT_APP_API_KEY;
 const unsplash = new Unsplash({
-  accessKey: ngH_LHSp5AkF2yhuPOKvhbYrBL3RLXjZ_gsvNO7dQiA,
+  accessKey: "ngH_LHSp5AkF2yhuPOKvhbYrBL3RLXjZ_gsvNO7dQiA",
 });
 export default function SearchPhotos() {
   const [query, setQuery] = useState("");
